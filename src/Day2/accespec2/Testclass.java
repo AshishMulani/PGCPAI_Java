@@ -9,7 +9,7 @@ public class Testclass {
         Employee employee1=new Employee("Ashish",4000);
 
         employee.setDepartment("IT");
-        employee.setInsentive(500f);
+        employee.setIncentive(500f);
 
         System.out.println(employee);
         System.out.println(employee1);

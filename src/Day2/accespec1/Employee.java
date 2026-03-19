@@ -4,17 +4,17 @@ public class Employee {
     public String name;
     private int salary;
     protected String department;
-    public float insentive;
+    public float incentive;
 
     public Employee(String name, int salary){
         this.name = name;
         this.salary= salary;
     }
 
-    public Employee(String name, int salary,float insentive){
+    public Employee(String name, int salary,float incentive){
         this.name = name;
         this.salary= salary;
-        this.insentive =insentive;
+        this.incentive =incentive;
     }
 
     public String getName(){
@@ -34,8 +34,8 @@ public class Employee {
         this.department=department;
 
     }
-    public void setInsentive(float insentive){
-        this.insentive=insentive;
+    public void setIncentive(float incentive){
+        this.incentive=incentive;
 
     }
 
