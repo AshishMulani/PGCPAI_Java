@@ -17,5 +17,4 @@ public abstract class Employee {             //as abstract function present
         return name+" "+id+" ";
     }
 
-
 }
