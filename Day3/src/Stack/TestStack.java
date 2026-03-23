@@ -1,6 +1,5 @@
 package Stack;
 
-
 public class TestStack {
 
     public static void main(String[] args) {
@@ -14,7 +13,5 @@ public class TestStack {
 
         System.out.println("Popped: " + st.pop()); // Returns 30
         System.out.println("Top element is: " + st.peek()); // Returns 20
-
-
     }
 }

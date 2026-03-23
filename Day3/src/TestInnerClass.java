@@ -4,5 +4,8 @@ public class TestInnerClass {
         oc.intOuter = 0;
 
         OuterClass.Innerclass ic = oc.new Innerclass();
+        ic.intInner=10;
+        ic.doInnerSomething();
+        System.out.println(ic.intInner);
     }
 }

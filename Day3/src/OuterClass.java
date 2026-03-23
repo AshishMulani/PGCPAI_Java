@@ -8,6 +8,7 @@ public class OuterClass {
 
         }
     } //scope ended
+
     public void doOuterSomething(){
        Innerclass ic = new Innerclass();
         ic.intInner = 20;
