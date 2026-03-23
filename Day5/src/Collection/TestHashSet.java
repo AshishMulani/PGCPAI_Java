@@ -18,7 +18,7 @@ public class TestHashSet {
         hashset.add(450);  //no duplicate
         System.out.println(hashset);
 
-        hashset.remove(20);
+        hashset.remove(450);
         System.out.println(hashset);
     }
 }
