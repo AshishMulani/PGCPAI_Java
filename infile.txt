@@ -1,0 +1,3 @@
+Hello from infile!
+This is sample content.
+Java IO Streams are working.

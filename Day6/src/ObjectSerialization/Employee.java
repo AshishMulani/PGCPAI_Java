@@ -1,8 +1,9 @@
-package comparator;
+package ObjectSerialization;
 
+import java.io.Serializable;
 import java.util.Comparator;
 
-public class Employee implements Comparator<Employee> {
+public class Employee implements Serializable {
     int id;
     String name;
     Employee(int id, String name){
@@ -15,9 +16,6 @@ public class Employee implements Comparator<Employee> {
         System.out.println("called HashCode");
         return id;
     }
-
-
-
 
     @Override
     public boolean equals(Object obj1) {
@@ -45,9 +43,6 @@ public class Employee implements Comparator<Employee> {
         this.id = id;
     }
 
-    @Override
-    public int compare(Employee o1, Employee o2) {
-        return 0;
-    }
+
 
 }
