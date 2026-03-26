@@ -8,8 +8,7 @@ public class User implements Serializable {
     private String password;
     private double balance;
 
-
-   public User(String username, String password){
+    public User(String username, String password){
         this.username=username;
         this.password=Encryption.encrypt(password);
         //this.balance=balance;
