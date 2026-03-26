@@ -22,7 +22,8 @@ public class TestEmployee {
                 System.out.println("Engineer");
                 Engineer engineer=(Engineer) e;
                 System.out.println(engineer.getIncentives());
-            } else if (e instanceof Manager) {
+            }
+            else if (e instanceof Manager) {
                 System.out.println("Manager");
                 Manager manager=(Manager) e;
                 System.out.println(manager.getProjects());
