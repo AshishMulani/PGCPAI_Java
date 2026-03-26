@@ -5,11 +5,12 @@ import java.util.Date;
 public class Student {
     private int rollno;
     private String name;
-    private LocalDate dob;
+    private Date dob;
+//    private LocalDate dob;
     private double percentage;
     public String result;
 
-    public Student(int rollno, String name, LocalDate dob, double percentage){
+    public Student(int rollno, String name, Date dob, double percentage){
         this.rollno=rollno;
         this.name=name;
         this.dob=dob;
@@ -25,7 +26,7 @@ public class Student {
         return percentage;
     }
 
-    public LocalDate getDob() {
+    public Date getDob() {
         return dob;
     }
 

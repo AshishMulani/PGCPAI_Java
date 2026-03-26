@@ -1,17 +1,19 @@
 package StudentSort;
 
 
-
-import java.time.LocalDate;
+import java.text.SimpleDateFormat;
 import java.util.*;
+import java.text.ParseException;
+
 
 
 //import static javax.print.attribute.Size2DSyntax.MM;
 
-public class TestStudent {
-    public static void main(String[] args) {
+public class TestStudent{
+    public static void main(String[] args)  throws ParseException{
 
         List<Student> studentList = new ArrayList<>();
+        SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyyy");
 
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter Student Details:");
@@ -27,17 +29,15 @@ public class TestStudent {
             String name = sc.nextLine();
 
             System.out.println("Date of Birth(yyyy-mm-dd): ");
-            String dobinput = sc.nextLine();
-
-            LocalDate dob=LocalDate.parse(dobinput);
-//            SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
-//            Date dob=sdf.parse(sc.nextLine());
+//            String dobinput = sc.nextLine();
+//            LocalDate dob=LocalDate.parse(dobinput);
+            Date dob=sdf.parse(sc.nextLine());
 
             System.out.println("Percentage: ");
             Double percentage = sc.nextDouble();
 
 
-            Student student = new Student(rollno,name,dob,percentage);
+            Student student = new Student(rollno, name, dob, percentage);
 
             studentList.add(student);
         }
