@@ -21,11 +21,6 @@ public class Employee {
         return this.name;
     }
 
-    @Override
-    public String toString(){
-        return this.name + " " + this.salary;
-    }
-
     public void setName(String name){
         this.name=name;
 
@@ -38,5 +33,8 @@ public class Employee {
         this.incentive=incentive;
 
     }
-
+    @Override
+    public String toString(){
+        return this.name + " " + this.salary;
+    }
 }
