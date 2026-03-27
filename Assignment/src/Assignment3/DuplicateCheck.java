@@ -10,7 +10,7 @@ public class DuplicateCheck {
         Scanner sc = new Scanner(System.in);
         List<Integer> numbers = new ArrayList<>();
 
-        System.out.print("Enter how many numbers: ");
+        System.out.print("Enter total count of numbers: ");
         int n = sc.nextInt();
 
         try {
